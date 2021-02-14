@@ -1,0 +1,83 @@
+@import '../../media-width';
+
+.ticket {
+  margin: 20px 0;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 5px;
+  padding: 0 20px;
+
+  .mainTitle {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px 20px;
+    align-items: center;
+    grid-template-areas: 'price void logo';
+
+    .price {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 24px;
+      color: #2196f3;
+      grid-area: price;
+
+      @media (max-width: $screen-md) {
+        font-size: 18px;
+      }
+    }
+
+    .companyLogo {
+      grid-area: logo;
+    }
+  }
+
+  .timetable {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'timing onmyway transfer';
+
+    & ul li {
+      padding: 5px 0;
+    }
+
+    & ul li span {
+      font-size: 12px;
+      font-style: normal;
+      line-height: 18px;
+      letter-spacing: 0.5px;
+      color: #a0b0b9;
+      text-transform: uppercase;
+
+      @media (max-width: $screen-sm) {
+        font-size: 9px;
+      }
+    }
+
+    & ul li p {
+      font-size: 14px;
+      color: #4a4a4a;
+      font-weight: 600;
+      line-height: 21px;
+
+      @media (max-width: $screen-sm) {
+        font-size: 12px;
+      }
+    }
+
+    @media (max-width: $screen-md) {
+      gap: 5px 10px;
+    }
+  }
+}
+
+.dark {
+  background-color: #343a40;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.5);
+  .timetable {
+    & ul li p {
+      color: white;
+    }
+  }
+}

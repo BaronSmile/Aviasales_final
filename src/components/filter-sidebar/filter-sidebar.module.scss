@@ -1,0 +1,48 @@
+@import '../../media-width';
+
+.filter {
+  padding: 20px 0 10px;
+
+  font-family: 'Open Sans', sans-serif;
+  color: #4a4a4a;
+
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+
+    @media (min-width: $screen-sm) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    width: 50%;
+
+    @media (min-width: $screen-md) {
+      width: 100%;
+    }
+  }
+}
+
+.dark{
+  background-color: #343a40;
+  color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}

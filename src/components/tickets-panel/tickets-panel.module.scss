@@ -1,0 +1,13 @@
+@import '../../media-width';
+
+.tickets-panel {
+  width: 100%;
+
+  @media (min-width: $screen-md) {
+    width: 503px;
+  }
+
+  &__tabs-list {
+    margin-bottom: 20px;
+  }
+}

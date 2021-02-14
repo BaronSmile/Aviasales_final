@@ -1,0 +1,16 @@
+.tickets-list {
+  &__ticket-card {
+    &:not(:last-of-type) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.spinner,
+.notfilter{
+  padding-top: 20px;
+}
+
+.notfilter{
+  height: 75vh;
+}

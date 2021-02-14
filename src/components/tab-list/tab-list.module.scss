@@ -1,0 +1,28 @@
+@import '../../media-width';
+
+.tabs-list {
+  display: flex;
+  justify-content: stretch;
+
+  &__item {
+    flex-grow: 1;
+
+    &:first-of-type {
+      .tabs-list__tab-btn {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+      }
+    }
+
+    &:last-of-type {
+      .tabs-list__tab-btn {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+    }
+  }
+
+  &__tab-btn {
+    width: 100%;
+  }
+}

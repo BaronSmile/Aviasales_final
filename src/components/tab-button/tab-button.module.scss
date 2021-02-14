@@ -1,0 +1,37 @@
+@import '../../media-width';
+
+.tab-btn {
+  letter-spacing: 0.5px;
+  color: #4a4a4a;
+  background: #ffffff;
+  cursor: pointer;
+  @media (min-width: $screen-sm) {
+    padding: 14px;
+  }
+
+  &:hover {
+    border-color: #2196f3;
+  }
+
+  &--active {
+    color: #ffffff;
+    background: #2196f3;
+    border-color: #2196f3;
+
+  }
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #6d6d6d;
+  background-color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.dark{
+  background-color: #343a40;
+  color:#ccc;
+}
